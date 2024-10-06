@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pelayanan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #8cac89;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea {
+            resize: none;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Pelayanan</h2>
+        <form>
+            <div class="mb-3">
+                <label for="serviceSelect" class="form-label">Pilih Pelayanan</label>
+                <select class="form-select" id="serviceSelect" required>
+                    <option value="">Pilih...</option>
+                    <option value="service1">Sangat Baik</option>
+                    <option value="service2">Baik</option>
+                    <option value="service3">Cukup</option>
+                    <option value="service4">Kurang Baik</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="detailsTextarea" class="form-label">Pesan Anda</label>
+                <textarea class="form-control" id="detailsTextarea" rows="4" placeholder="Masukkan detail tambahan di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

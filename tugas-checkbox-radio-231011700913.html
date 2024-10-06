@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox dan Radio Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #8cac89;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 500px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mohon Masukkan Pilihan Anda</h1>
+    <form>
+        <fieldset>
+            <legend>Pilih Buah:</legend>
+            <label>
+                <input type="radio" name="fruit" value="tomato"> Fresh Tomato Cherry
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="pineapple"> Fresh Pineapple
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="strawberry"> Fresh Strawberry
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="cucumber"> Fresh Cucumber
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="tomato2"> Fresh Tomato
+            </label>
+            <label>
+                <input type="radio" name="fruit" value="banana"> Fresh Banana 
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pilih Pengiriman:</legend>
+            <label>
+                <input type="radio" name="delivery" value="jne"> JNE Express
+            </label>
+            <label>
+                <input type="radio" name="delivery" value="sameday"> Sameday/Instant
+            </label>
+            <label>
+                <input type="radio" name="delivery" value="paxel"> Paxel
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Metode Pembayaran:</legend>
+            <label>
+                <input type="checkbox" name="payment" value="credit_card"> Kartu Kredit
+            </label>
+            <label>
+                <input type="checkbox" name="payment" value="bank_transfer"> Transfer Bank
+            </label>
+        </fieldset>
+        
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
